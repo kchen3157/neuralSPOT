@@ -141,18 +141,18 @@ pdm_init(ns_audio_config_t *config) {
         am_hal_gpio_pinconfig(AM_BSP_GPIO_PDM0_DATA, g_AM_BSP_GPIO_PDM0_DATA);
         break;
     case NS_AUDIO_PDM_MICBOARD_1:
-        sGpioConfig = g_AM_BSP_GPIO_PDM2_CLK;
+        // sGpioConfig = g_AM_BSP_GPIO_PDM2_CLK;
         sGpioConfig.GP.cfg_b.eDriveStrength = AM_HAL_GPIO_PIN_DRIVESTRENGTH_0P5X;
 
-        am_hal_gpio_pinconfig(AM_BSP_GPIO_PDM2_CLK, sGpioConfig);
-        am_hal_gpio_pinconfig(AM_BSP_GPIO_PDM2_DATA, g_AM_BSP_GPIO_PDM2_DATA);
+        // am_hal_gpio_pinconfig(AM_BSP_GPIO_PDM2_CLK, sGpioConfig);
+        // am_hal_gpio_pinconfig(AM_BSP_GPIO_PDM2_DATA, g_AM_BSP_GPIO_PDM2_DATA);
         break;
     case NS_AUDIO_PDM_MICBOARD_2:
-        sGpioConfig = g_AM_BSP_GPIO_PDM1_CLK;
+        // sGpioConfig = g_AM_BSP_GPIO_PDM1_CLK;
         sGpioConfig.GP.cfg_b.eDriveStrength = AM_HAL_GPIO_PIN_DRIVESTRENGTH_0P5X;
 
-        am_hal_gpio_pinconfig(AM_BSP_GPIO_PDM1_CLK, sGpioConfig);
-        am_hal_gpio_pinconfig(AM_BSP_GPIO_PDM1_DATA, g_AM_BSP_GPIO_PDM1_DATA);
+        // am_hal_gpio_pinconfig(AM_BSP_GPIO_PDM1_CLK, sGpioConfig);
+        // am_hal_gpio_pinconfig(AM_BSP_GPIO_PDM1_DATA, g_AM_BSP_GPIO_PDM1_DATA);
         break;
     }
 
